@@ -39,13 +39,19 @@ Esses aliases utilizam plugins do `kubectl` para funcionalidades avançadas. Cer
 | `kvs` | `kubectl-view_secret`            | Visualiza segredos                                  |
 | `kw`  | `watch -n1 'kubectl get pod | grep -i $1'` | Monitora continuamente os pods específicos           |
 
-## Installation
+## Instalacao manual
 
 1. Copie os aliases deste README.
 2. Cole-os no seu arquivo `~/.bashrc`.
 3. Fonte o arquivo `.bashrc`: `source ~/.bashrc`.
-4. Instale os plugins `kubectl` necessários para os aliases avançados.
+
+## Instalacao por script
+
+1. Dê permissão de execução ao script: `chmod +x install.sh`.
+2. Execute o script: `./install.sh`.
+3. Este script adiciona os aliases ao final do seu arquivo `.bashrc`: `source ~/.bashrc`.
 
 > **Nota:** Estes aliases assumem que você tem `kubectl` instalado e configurado corretamente.
+> **Nota:** Instale os plugins `kubectl` necessários para os aliases avançados.
 
 Aproveite o fluxo de trabalho simplificado com Kubernetes!
